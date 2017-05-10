@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zxdmjr.teacherassistant">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.zxdmjr.teacherassistant.AppBase"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zxdmjr.teacherassistant.profile_activity"
+            android:parentActivityName="com.zxdmjr.teacherassistant.AppBase" />
+        <activity
+            android:name="com.zxdmjr.teacherassistant.Student_Registartion"
+            android:parentActivityName="com.zxdmjr.teacherassistant.profile_activity" />
+        <activity
+            android:name="com.zxdmjr.teacherassistant.noteCreate"
+            android:parentActivityName="com.zxdmjr.teacherassistant.noteActivity" />
+        <activity
+            android:name="com.zxdmjr.teacherassistant.attendanceActivity"
+            android:parentActivityName="com.zxdmjr.teacherassistant.AppBase" />
+        <activity
+            android:name="com.zxdmjr.teacherassistant.Result_activity"
+            android:parentActivityName="com.zxdmjr.teacherassistant.cgpa_activity" />
+        <activity
+            android:name="com.zxdmjr.teacherassistant.cgpa_activity"
+            android:parentActivityName="com.zxdmjr.teacherassistant.AppBase" />
+        <activity
+            android:name="com.zxdmjr.teacherassistant.noteActivity"
+            android:parentActivityName="com.zxdmjr.teacherassistant.AppBase" />
+        <activity
+            android:name="com.zxdmjr.teacherassistant.scheduler"
+            android:parentActivityName="com.zxdmjr.teacherassistant.AppBase" />
+        <activity
+            android:name="com.zxdmjr.teacherassistant.make_schedule"
+            android:parentActivityName="com.zxdmjr.teacherassistant.scheduler" />
+        <activity
+            android:name="com.zxdmjr.teacherassistant.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.zxdmjr.teacherassistant.AppBase" />
+        <activity
+            android:name="com.zxdmjr.teacherassistant.About"
+            android:parentActivityName="com.zxdmjr.teacherassistant.AppBase" />
+        <activity android:name="com.zxdmjr.teacherassistant.Edit_Student"
+            android:parentActivityName="com.zxdmjr.teacherassistant.AppBase"/>
+    </application>
+
+</manifest>
